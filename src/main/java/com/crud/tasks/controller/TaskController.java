@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/v1/tasks")
 public class TaskController {
 
-    @RequestMapping(method = RequestMethod.GET, value = "")
+    @GetMapping
     public List<TaskDto> getTasks() {
         return new ArrayList<>();
     }
@@ -20,8 +20,8 @@ public class TaskController {
         return new TaskDto(1L, "test title", "test_content");
     }
 
-    @DeleteMapping(value = "{taskId")
-    public void deleteTask(@PathVariable  Long taskId) {
+    @DeleteMapping
+    public void deleteTask(Long taskId) {
     }
 
     @PutMapping
