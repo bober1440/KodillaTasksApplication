@@ -6,7 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class Task {
-    private Long idaa;
+    private Long id;
     private String title;
     private String content;
 }
