@@ -9,6 +9,8 @@ import java.util.List;
 @Service
 public class TaskMapper {
 
+    TaskMapper taskMapper;
+
     public Task mapToTask(final TaskDto taskDto) {
         return new Task(
                 taskDto.getId(),
