@@ -1,4 +1,4 @@
-package com.crud.tasks.trello.service;
+package com.crud.tasks.service;
 
 import com.crud.tasks.domain.TrelloBoardDto;
 import com.crud.tasks.trello.client.TrelloClient;
@@ -8,6 +8,7 @@ import java.util.List;
 
 @Service
 public class TrelloService {
+
 
     private final TrelloClient trelloClient;
 
